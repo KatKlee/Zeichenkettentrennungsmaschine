@@ -1,3 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Epilogue', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* font-family: 'IBM Plex Mono', monospace; */
+
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Font */
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+/* Central Position of Main */
+main {
+    width: 80%;
+    margin: 80px auto;
+}
+
+/* Main Headline */
+h1 {
+    font-size: 4em;
+    font-weight: 300;
+    line-height: 1.2em;
+    width: 80%;
+    word-wrap: break-word;
+    margin: 20px 0 60px 0;
+}
+
+/* Styling "Ausgabe"/"Eingabe" */
+h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+
+h3 {
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+/* Input Labels Styling */
+label {
+    font-size: 0.95em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+input {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    color: black;
+    background: yellow;
+    border-style: none;
+    border-radius: 100px;
+    padding: 16px 30px 12px 30px;
+}
+
+/* Placeholder Text Styling */
+::placeholder {
+    opacity: 0.5;
+}
+
+
+/* ---------------------------- Input Section ---------------------------- */
+/* Spacing */
 .input article {
     margin-bottom: 20px;
 }
@@ -5,15 +84,58 @@
 .kette div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
+/* Styling of "Warnmeldung */
 #warnmeldung {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9em;
+    font-weight: 300;
     color: red;
+    margin-top: 10px;
 }
 
+/* Accent Color Radio Buttons */
+input[name="radioWoTrennen"] {
+    accent-color: black;
+}
+
+.radioBtns div {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+/* Button Styling */
 .input button {
-    width: 100px;
+    width: 150px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    font-size: 0.95em;
+    color: black;
+    background-color: white;
+    /* background-color: black; */
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 16px 30px 12px 30px;
+    margin-top: 10px;
+}
+
+/* Button Hover Styling */
+.input button:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+/* ---------------------------- Output Section ---------------------------- */
+
+/* Spacing above Output Section */
+.output {
+    margin-top: 60px;
 }
 
 .output div {
@@ -24,4 +146,13 @@
 
 .output article {
     width: 80vw;
+}
+
+/* Styling Output of Splitted Text */
+#vordererTeil,
+#hintererTeil {
+    font-weight: 300;
+    font-size: 1.25em;
+    color: black;
+    margin-top: 20px;
 }

@@ -16,7 +16,7 @@ const trennen = () => {
 
     if (resultIndex == -1) {
         console.log('falsch')
-        warning.innerHTML = 'Keine Übereinstimmung gefunden. Bitte nochmal überprüfen.'
+        warning.innerHTML = 'ACHTUNG: Keine Übereinstimmung gefunden – bitte nochmal überprüfen!'
         textOutPart1.innerHTML = inputValue
 
     } else {

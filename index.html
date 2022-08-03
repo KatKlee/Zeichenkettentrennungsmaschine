@@ -11,23 +11,26 @@
 
 <body>
     <main>
+        <!-- Main Headline -->
         <h1>Zeichenkettentrennungsmaschine</h1>
         <form onsubmit="return false">
 
-            <!----------------------------------- Input ----------------------------------->
+            <!----------------------------------- Input Section ----------------------------------->
             <section class="input">
+                <h2>Eingabe</h2>
 
                 <!-------------- Input Zeichenfelder -------------->
                 <article class="kette">
                     <!-- Zutrennende Zeichenkette -->
                     <div>
                         <label for="inputKette">Zu trennende Zeichenkette:</label>
-                        <input type="text" name="inputKette" id="inputKette">
+                        <input type="text" name="inputKette" id="inputKette" placeholder="Gib hier deinen Satz ein …">
                     </div>
                     <!-- Zeichenkette für Trennungsposition -->
                     <div>
                         <label for="trennPos">Zeichenkette für die Trennungsposition:</label>
-                        <input type="text" name="trennPos" id="trennPos">
+                        <input type="text" name="trennPos" id="trennPos"
+                            placeholder="Gib hier ein Wort aus dem Satz ein, bei dem getrennt werden soll …">
                         <p id="warnmeldung"></p>
                     </div>
                 </article>
@@ -37,12 +40,12 @@
                     <!-- Button "davor trennen" -->
                     <div>
                         <input type="radio" name="radioWoTrennen" id="davorTrenn" value="davor" checked>
-                        <label for="davorTrenn">davor trennen</label>
+                        <label class="labelRadioBtns" for="davorTrenn">Davor trennen</label>
                     </div>
                     <!-- Button "danach trennen" -->
                     <div>
                         <input type="radio" name="radioWoTrennen" id="danachTrenn" value="danach">
-                        <label for="danachTrenn">danach trennen</label>
+                        <label class="labelRadioBtns" for="danachTrenn">danach trennen</label>
                     </div>
                     <p id="defaultText"></p>
                 </article>
@@ -52,7 +55,7 @@
             </section>
 
 
-            <!----------------------------------- Output ----------------------------------->
+            <!----------------------------------- Output Section ----------------------------------->
             <section class="output">
                 <!-- Headline -->
                 <h2>Ausgabe</h2>
