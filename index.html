@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeichenkettentrennungsmaschine</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Zeichenkettentrennungsmaschine</h1>
+        <form onsubmit="return false">
+
+            <!----------------------------------- Input ----------------------------------->
+            <section class="input">
+
+                <!-------------- Input Zeichenfelder -------------->
+                <article class="kette">
+                    <!-- Zutrennende Zeichenkette -->
+                    <div>
+                        <label for="inputKette">Zu trennende Zeichenkette:</label>
+                        <input type="text" name="inputKette" id="inputKette">
+                    </div>
+                    <!-- Zeichenkette für Trennungsposition -->
+                    <div>
+                        <label for="trennPos">Zeichenkette für die Trennungsposition:</label>
+                        <input type="text" name="trennPos" id="trennPos">
+                        <p id="warnmeldung"></p>
+                    </div>
+                </article>
+
+                <!-------------- Input Radiobuttons -------------->
+                <article class="radioBtns">
+                    <!-- Button "davor trennen" -->
+                    <div>
+                        <input type="radio" name="radioWoTrennen" id="davorTrenn" value="davor" checked>
+                        <label for="davorTrenn">davor trennen</label>
+                    </div>
+                    <!-- Button "danach trennen" -->
+                    <div>
+                        <input type="radio" name="radioWoTrennen" id="danachTrenn" value="danach">
+                        <label for="danachTrenn">danach trennen</label>
+                    </div>
+                    <p id="defaultText"></p>
+                </article>
+
+                <!-------------- Button mit onclick -------------->
+                <button onclick="trennen()">Trennen</button>
+            </section>
+
+
+            <!----------------------------------- Output ----------------------------------->
+            <section class="output">
+                <!-- Headline -->
+                <h2>Ausgabe</h2>
+                <div>
+                    <!-- Ausgabe des Vorderen Teils -->
+                    <article>
+                        <h3>Vorderer Teil</h3>
+                        <p id="vordererTeil"></p>
+                    </article>
+                    <!-- Ausgabe des Hinteren Teils -->
+                    <article>
+                        <h3>Hinterer Teil</h3>
+                        <p id="hintererTeil"></p>
+                    </article>
+                </div>
+            </section>
+        </form>
+    </main>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
