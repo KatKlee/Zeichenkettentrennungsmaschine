@@ -8,6 +8,8 @@ Version 2.0:
 – Leeren der Ausgabefelder bei nicht übereinstimmendem Vergleich  
 – Funktionalität auch bei erstem und letztem Element der Zeichenkette  
 
+
+
 *A string separator created with Javascript.  
 Elements and structure according to a given example.*
 
