@@ -9,10 +9,9 @@ Version 2.0:
 – Funktionalität auch bei erstem und letztem Element der Zeichenkette  
 
 *A string separator created with Javascript.  
-Elements and structure according to a given example.
+Elements and structure according to a given example.*
 
-Version 2.0:  
+*Version 2.0:  
 – Possibility of comparing only single characters, parts of a word/string and also punctuation marks  
 – Empty the output fields if the comparison does not match  
-– Functionality also for first and last element of the string
-*
+– Functionality also for first and last element of the string*
